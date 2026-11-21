@@ -1,0 +1,191 @@
+{
+  "results_dir": "agent-evalkit/results",
+  "direction": "const1",
+  "n_configs_raw": 12,
+  "skipped": [
+    {
+      "file": "agent-evalkit/results/eval-cost-local4.json",
+      "reason": "not_score_file"
+    },
+    {
+      "file": "agent-evalkit/results/gate-policy.json",
+      "reason": "not_score_file"
+    },
+    {
+      "file": "agent-evalkit/results/run-mined-gw-calc.json",
+      "reason": "not_score_file"
+    },
+    {
+      "file": "agent-evalkit/results/run-mined-local-calc.json",
+      "reason": "not_score_file"
+    },
+    {
+      "file": "agent-evalkit/results/replay-demo/trace-gw7-evidence.jsonl",
+      "reason": "not_score_file"
+    },
+    {
+      "file": "agent-evalkit/results/failure-loop/armA-adv05-1.json",
+      "reason": "not_score_file"
+    },
+    {
+      "file": "agent-evalkit/results/failure-loop/armA-adv05-2.json",
+      "reason": "not_score_file"
+    },
+    {
+      "file": "agent-evalkit/results/failure-loop/armA-adv05-3.json",
+      "reason": "not_score_file"
+    },
+    {
+      "file": "agent-evalkit/results/failure-loop/armB-adv05-1.json",
+      "reason": "not_score_file"
+    },
+    {
+      "file": "agent-evalkit/results/failure-loop/armB-adv05-2.json",
+      "reason": "not_score_file"
+    },
+    {
+      "file": "agent-evalkit/results/failure-loop/armB-adv05-3.json",
+      "reason": "not_score_file"
+    },
+    {
+      "file": "agent-evalkit/results/failure-loop/h-repro.json",
+      "reason": "not_score_file"
+    },
+    {
+      "file": "agent-evalkit/results/failure-loop/run-20261110T091250Z.jsonl",
+      "reason": "not_score_file"
+    },
+    {
+      "file": "agent-evalkit/results/failure-loop/run-20261110T093444Z.jsonl",
+      "reason": "not_score_file"
+    },
+    {
+      "file": "agent-evalkit/results/failure-loop/run-20261110T093529Z.jsonl",
+      "reason": "not_score_file"
+    },
+    {
+      "file": "agent-evalkit/results/failure-loop/run-20261110T093614Z.jsonl",
+      "reason": "not_score_file"
+    },
+    {
+      "file": "agent-evalkit/results/failure-loop/run-20261110T093729Z.jsonl",
+      "reason": "not_score_file"
+    },
+    {
+      "file": "agent-evalkit/results/hard-x3/h-adv-01-1.json",
+      "reason": "not_score_file"
+    },
+    {
+      "file": "agent-evalkit/results/hard-x3/h-adv-01-2.json",
+      "reason": "not_score_file"
+    },
+    {
+      "file": "agent-evalkit/results/hard-x3/h-adv-01-3.json",
+      "reason": "not_score_file"
+    }
+  ],
+  "constant_found": {
+    "const1": {
+      "adv-01": 1.0,
+      "adv-02": 1.0,
+      "adv-03": 1.0,
+      "adv-04": 1.0,
+      "adv-06": 1.0,
+      "adv-07": 1.0,
+      "adv-08": 1.0,
+      "adv-10": 1.0,
+      "adv-11": 1.0,
+      "adv-12": 1.0,
+      "audit-01": 1.0,
+      "audit-02": 1.0,
+      "audit-04": 1.0,
+      "audit-05": 1.0,
+      "audit-06": 1.0,
+      "audit-08": 1.0,
+      "audit-09": 1.0,
+      "audit-10": 1.0
+    },
+    "const0": {}
+  },
+  "excluded_ids": [
+    "adv-01",
+    "adv-02",
+    "adv-03",
+    "adv-04",
+    "adv-06",
+    "adv-07",
+    "adv-08",
+    "adv-10",
+    "adv-11",
+    "adv-12",
+    "audit-01",
+    "audit-02",
+    "audit-04",
+    "audit-05",
+    "audit-06",
+    "audit-08",
+    "audit-09",
+    "audit-10"
+  ],
+  "n_excluded": 18,
+  "before": {
+    "L1_after": 62,
+    "L2_after": 46,
+    "L3_after": 28,
+    "const_after": 18,
+    "n_configs": 12,
+    "inflation_after": 1.348,
+    "power_distribution": {
+      "2": 16,
+      "3": 10,
+      "5": 12,
+      "7": 24
+    }
+  },
+  "after": {
+    "L1_after": 44,
+    "L2_after": 28,
+    "L3_after": 28,
+    "const_after": 0,
+    "n_configs": 12,
+    "inflation_after": 1.571,
+    "power_distribution": {
+      "2": 16,
+      "3": 2,
+      "5": 2,
+      "7": 24
+    },
+    "L2_ids": [
+      "adv-05",
+      "adv-09",
+      "audit-03",
+      "audit-07",
+      "calc-01",
+      "calc-02",
+      "calc-03",
+      "calc-04",
+      "calc-05",
+      "calc-06",
+      "calc-07",
+      "calc-08",
+      "conv-01",
+      "conv-02",
+      "conv-03",
+      "conv-04",
+      "lookup-01",
+      "lookup-02",
+      "lookup-03",
+      "lookup-04",
+      "lookup-05",
+      "lookup-06",
+      "lookup-07",
+      "lookup-08",
+      "multi-01",
+      "multi-02",
+      "multi-03",
+      "multi-04"
+    ],
+    "const_ids_after": []
+  },
+  "label": "evalkit_drop18"
+}

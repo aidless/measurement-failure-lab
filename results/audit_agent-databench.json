@@ -1,0 +1,139 @@
+{
+  "generated": "2026-11-20T02:44:18.605826+00:00",
+  "inputs": {
+    "results_dir": "agent-databench/results",
+    "manifest": null
+  },
+  "files": {
+    "json_scanned": 3,
+    "score_files_used": 3,
+    "duplicate_files_collapsed": 0,
+    "skipped": []
+  },
+  "caliber": {
+    "L1_manifest": 20,
+    "L2_measured_power_ge_3": 20,
+    "L3_discriminative": 1,
+    "inflation_L1_over_L2": 1.0,
+    "measured_at_least_once": 20,
+    "constant_tasks_in_L2": 19
+  },
+  "hash_lock": {
+    "verified": 0,
+    "mismatched": 0,
+    "mismatches": [],
+    "policy": "no manifest"
+  },
+  "constant_tasks": [
+    {
+      "id": "t01",
+      "score": 0.0,
+      "n_configs": 3
+    },
+    {
+      "id": "t02",
+      "score": 0.0,
+      "n_configs": 3
+    },
+    {
+      "id": "t03",
+      "score": 0.0,
+      "n_configs": 3
+    },
+    {
+      "id": "t04",
+      "score": 0.0,
+      "n_configs": 3
+    },
+    {
+      "id": "t05",
+      "score": 0.0,
+      "n_configs": 3
+    },
+    {
+      "id": "t06",
+      "score": 0.0,
+      "n_configs": 3
+    },
+    {
+      "id": "t07",
+      "score": 0.0,
+      "n_configs": 3
+    },
+    {
+      "id": "t08",
+      "score": 0.0,
+      "n_configs": 3
+    },
+    {
+      "id": "t09",
+      "score": 0.0,
+      "n_configs": 3
+    },
+    {
+      "id": "t10",
+      "score": 0.0,
+      "n_configs": 3
+    },
+    {
+      "id": "t11",
+      "score": 0.0,
+      "n_configs": 3
+    },
+    {
+      "id": "t12",
+      "score": 0.0,
+      "n_configs": 3
+    },
+    {
+      "id": "t13",
+      "score": 0.0,
+      "n_configs": 3
+    },
+    {
+      "id": "t15",
+      "score": 0.0,
+      "n_configs": 3
+    },
+    {
+      "id": "t16",
+      "score": 0.0,
+      "n_configs": 3
+    },
+    {
+      "id": "t17",
+      "score": 0.0,
+      "n_configs": 3
+    },
+    {
+      "id": "t18",
+      "score": 0.0,
+      "n_configs": 3
+    },
+    {
+      "id": "t19",
+      "score": 0.0,
+      "n_configs": 3
+    },
+    {
+      "id": "t20",
+      "score": 0.0,
+      "n_configs": 3
+    }
+  ],
+  "spectra": {
+    "available": true,
+    "n_tasks": 20,
+    "n_configs": 3,
+    "k_eff_participation_ratio": 1.0,
+    "upper_bound_min_tasks_configs": 3,
+    "singular_values_top10": [
+      0.8165,
+      0.0,
+      0.0
+    ],
+    "note": "k_eff 同时是任务冗余与配置多样性的函数；必须与上界 min(n_tasks, n_configs) 同报，跨配置数不可比。"
+  },
+  "backfill_targets": [],
+  "verdict": "清单 20 条；其中 20 条有 >=3 种不同配置的测量 (20/20)；再其中 1 条仍有区分度。'N 条' 描述清单，'20 条' 才是实测规模，高估 1.0 倍。0 条待补测。"
+}

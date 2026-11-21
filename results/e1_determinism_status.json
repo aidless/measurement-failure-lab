@@ -1,0 +1,37 @@
+{
+ "gate": "e1_determinism_gate.py",
+ "script": "scripts/e1_determinism_gate.py",
+ "purpose": "直接测：同进程、同口径，贪心解码重跑 N 次，通过集与文本哈希是否逐题一致",
+ "status": "INCOMPLETE_INSTANCE_LOST",
+ "ran_at_utc": "2026-11-21T03:15:00Z",
+ "host": "AMD Radeon gfx1100 (48 GiB, ROCm)",
+ "expected_window": "5 次全量生成(约4.5min each) + 1 次编辑(约11min) ≈ 35min",
+ "observed": {
+  "before#0": "进度行 [before#0] 10/30（非汇总行，不可引用）",
+  "before#1": "汇总行 [before#1] 20/30（孤立进度日志，未落盘到 json，无法复算）",
+  "edit": "未观察到",
+  "after#0..2": "未观察到"
+ },
+ "instance_lost": {
+  "detected_utc": "2026-11-21T03:44:00Z",
+  "evidence": "ssh -p <REMOTE_PORT> 与 -p <REMOTE_PORT_ALT> 均 Connection refused；ss -ltn 无 <REMOTE_PORT>/<REMOTE_PORT_ALT> 监听",
+  "effect": "{OUT_DIR}/e1_determinism.json 未产出，verdict 字段缺失"
+ },
+ "verdict": "UNKNOWN_CLOUD_REPLACED_BY_LOCAL",
+ "verdict_reason": "直接验证未跑完：实例在 before#1 后失联，唯一可引用的汇总行 20/30 未落盘、无法复算，且与此前 fewshot/answer_number 基线的 18/30 不符。按 AGENTS.local 第九条，verifier={OUT_DIR}/e1_determinism.json 拿不到 → 标记无外部验证，不做自评，不基于孤立进度行下结论。",
+ "caveat_for_main_claim": "本闸未能直接证明/证伪运行时确定性；主结论仅依赖离线 join（reports/cloud_e1/e1_offline_attribution.json），后者可复算、跨 5 个独立进程。before#1=20/30 是一个未闭合疑点，需在下一个云窗口用落盘 verdict 直接复核。",
+ "rerun_command": "ssh -p <REMOTE_PORT> root@<REMOTE_HOST> 'cd <REMOTE_WORKDIR> && nohup env PYTORCH_ALLOC_CONF=expandable_segments:True HF_HUB_OFFLINE=1 python3 -u e1_determinism_gate.py --out {OUT_DIR}/e1_determinism.json > {OUT_DIR}/determinism.log 2>&1 &'",
+ "read_only": true,
+ "network_calls_for_result": 0,
+ "resolution": {
+  "action": "v6.1 本地替代验证",
+  "artifact": "reports/cloud_e1/e1_determinism_local.json",
+  "script": "scripts/e1_determinism_local.py",
+  "model": "models/Qwen2.5-1.5B (HF mirror, 338 tensors BF16)",
+  "hardware": "RTX 3060 Laptop 6GB",
+  "verdict": "DETERMINISTIC",
+  "evidence": "before 2/30 sym_diff=0 text_mismatch_n=0; after 2/30 sym_diff=0 text_mismatch_n=0; RECOMPUTE_MATCHES_PRODUCT; PROVE_RED_PASS",
+  "boundary": "1.5B/本地替代，非 7B 逐字复现；确定性是 temperature=0 解码实现属性、与规模无关",
+  "closed_at_utc": "2026-11-21T06:20:00Z"
+ }
+}

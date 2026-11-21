@@ -1,0 +1,16 @@
+{
+  "scores": {
+    "T001": 1.0,
+    "T002": 0.0,
+    "T003": 1.0,
+    "T004": 0.0,
+    "T005": 1.0,
+    "T006": 0.0
+  },
+  "overall": 0.5,
+  "verified": true,
+  "provenance": {
+    "llm": "m1",
+    "config": "default"
+  }
+}

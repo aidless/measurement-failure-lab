@@ -1,0 +1,30 @@
+{"id": "D1-01", "family": "D1", "question": "小明有 12 个苹果，吃掉 3 个后又买了 5 个，再送出 2 个。现在有几个？", "answer": 12.0, "tol": 1e-09, "check": "numeric"}
+{"id": "D1-02", "family": "D1", "question": "一本书 8 元，买 3 本打 9 折。一共要付多少元？", "answer": 21.6, "tol": 1e-06, "check": "numeric"}
+{"id": "D1-03", "family": "D1", "question": "仓库有 240 箱货，第一天运走 1/4，第二天运走剩下的 1/3。还剩多少箱？", "answer": 120.0, "tol": 1e-09, "check": "numeric"}
+{"id": "D1-04", "family": "D1", "question": "车速 60 km/h，行驶 2.5 小时后又以 80 km/h 行驶 1.5 小时。总里程多少 km？", "answer": 270.0, "tol": 1e-09, "check": "numeric"}
+{"id": "D1-05", "family": "D1", "question": "某数加 7 再乘 3 得 45。这个数是多少？", "answer": 8.0, "tol": 1e-09, "check": "numeric"}
+{"id": "D1-06", "family": "D1", "question": "一件商品原价 200 元，先涨 20% 再降 20%。现价多少元？", "answer": 192.0, "tol": 1e-06, "check": "numeric"}
+{"id": "D1-07", "family": "D1", "question": "班级 45 人，男生占 3/5。女生有多少人？", "answer": 18.0, "tol": 1e-09, "check": "numeric"}
+{"id": "D1-08", "family": "D1", "question": "水池容量 600 升，进水 30 升/分，出水 10 升/分。空池注满需多少分钟？", "answer": 30.0, "tol": 1e-09, "check": "numeric"}
+{"id": "D1-09", "family": "D1", "question": "有 5 个连续整数，和为 100。最小的那个是多少？", "answer": 18.0, "tol": 1e-09, "check": "numeric"}
+{"id": "D1-10", "family": "D1", "question": "把 360 元按 2:3:4 分给三人。最多的一份是多少元？", "answer": 160.0, "tol": 1e-09, "check": "numeric"}
+{"id": "D1-11", "family": "D1", "question": "一列数 3,7,11,15,... 第 10 项是多少？", "answer": 39.0, "tol": 1e-09, "check": "numeric"}
+{"id": "D1-12", "family": "D1", "question": "长方形长 12 cm、宽 8 cm，周长是多少 cm？", "answer": 40.0, "tol": 1e-09, "check": "numeric"}
+{"id": "D1-13", "family": "D1", "question": "甲单独 6 天完成，乙单独 3 天完成。两人合作需几天？（保留 2 位小数）", "answer": 2.0, "tol": 1e-06, "check": "numeric"}
+{"id": "D1-14", "family": "D1", "question": "打折后 85 元，原价 100 元。折扣是几折？（填数字，如 8.5）", "answer": 8.5, "tol": 1e-06, "check": "numeric"}
+{"id": "D1-15", "family": "D1", "question": "三项测试 80/90/85 分，权重 2:3:5。加权平均多少分？", "answer": 85.5, "tol": 1e-06, "check": "numeric"}
+{"id": "D2-F1-01", "family": "D2-F1", "question": "某数经过「×3 再 −7」后落在 [11,20] 且为偶数。原数的整数解有哪些？请给出所有解的和。", "answer": 16.0, "tol": 1e-09, "check": "numeric"}
+{"id": "D2-F1-02", "family": "D2-F1", "question": "某数经过「平方再减它自己」后等于 12。若该数为正，它是多少？", "answer": 4.0, "tol": 1e-09, "check": "numeric"}
+{"id": "D2-F1-03", "family": "D2-F1", "question": "把「先加 5 再乘 2」的逆运算记作 R(x)。若 R(R(14)) = y，y 是多少？", "answer": -4.0, "tol": 1e-09, "check": "numeric"}
+{"id": "D2-F1-04", "family": "D2-F1", "question": "三数之和为 33，最大数是最小数的 3 倍，中间数比最小数大 3。最小数是多少？", "answer": 6.0, "tol": 1e-09, "check": "numeric"}
+{"id": "D2-F1-05", "family": "D2-F1", "question": "某班人数在 40–50 之间，按 3 人一组余 2，按 4 人一组余 1。班上有多少人？", "answer": 41.0, "tol": 1e-09, "check": "numeric"}
+{"id": "D2-F2-01", "family": "D2-F2", "question": "a1=2, a(n+1)=3·a(n)−n。求 a1..a6 中能被 4 整除的项的个数。", "answer": 2.0, "tol": 1e-09, "check": "numeric"}
+{"id": "D2-F2-02", "family": "D2-F2", "question": "b1=1, b2=1, b(n)=b(n−1)+2·b(n−2)。b7 是多少？", "answer": 43.0, "tol": 1e-09, "check": "numeric"}
+{"id": "D2-F2-03", "family": "D2-F2", "question": "c1=5, c(n+1)=c(n)+n²=… 即 c(n+1)=c(n)+n²。c5 是多少？", "answer": 35.0, "tol": 1e-09, "check": "numeric"}
+{"id": "D2-F2-04", "family": "D2-F2", "question": "d1=1, d(n+1)=2·d(n)+(−1)^n。d5 是多少？", "answer": 11.0, "tol": 1e-09, "check": "numeric"}
+{"id": "D2-F2-05", "family": "D2-F2", "question": "e1=3, e(n+1)=e(n)²−2。e4 是多少？", "answer": 2207.0, "tol": 1e-09, "check": "numeric"}
+{"id": "D2-F3-01", "family": "D2-F3", "question": "数组 [1,2] 经三轮迭代，每轮把元素替换为「前两元素之和」（保持原两元素再追加新元素）。末轮三个数之和是多少？", "answer": 16.0, "tol": 1e-09, "check": "numeric"}
+{"id": "D2-F3-02", "family": "D2-F3", "question": "表格三列 A/B/C，每行 A+B=C。已知第 1 行 A=3,C=10；第 2 行 B=7,C=15。两行 A 之和是多少？", "answer": 11.0, "tol": 1e-09, "check": "numeric"}
+{"id": "D2-F3-03", "family": "D2-F3", "question": "描述：某商品单价 x 元，买 3 件总价超过 50 元但不到 60 元，且 x 为整数。x 的所有可能值之和是多少？", "answer": 54.0, "tol": 1e-09, "check": "numeric"}
+{"id": "D2-F3-04", "family": "D2-F3", "question": "集合 S={1,2,…,20} 中，既不是 2 的倍数也不是 3 的倍数的元素个数是多少？", "answer": 7.0, "tol": 1e-09, "check": "numeric"}
+{"id": "D2-F3-05", "family": "D2-F3", "question": "某序列首项 7，此后每项等于前一项的数字和加 3（如 7→10→4→7…）。第 5 项是多少？", "answer": 10.0, "tol": 1e-09, "check": "numeric"}

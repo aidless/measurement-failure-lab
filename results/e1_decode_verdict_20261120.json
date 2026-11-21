@@ -1,0 +1,44 @@
+{
+ "hypothesis": "H1-decode: logit↑ 与生成净0 的解耦由解码层重复循环放大造成",
+ "edited_positions": 339424,
+ "mechanism_check": {
+  "edit_introduces_cycles": 7,
+  "B_suppresses_cycles": 0,
+  "C_suppresses_cycles": 0,
+  "A_rep_after": 0.557,
+  "B_rep_after": 0.293,
+  "C_rep_after": 0.216,
+  "manipulation_check_pass": true
+ },
+ "paired_deltas": {
+  "A_raw": 1,
+  "B_rep1.15": -4,
+  "C_ngram4": 3
+ },
+ "result_direction_consistent_across_repairs": false,
+ "verifier_v1": {
+  "v1_raw_reproduces_prior": false,
+  "v1_observed": {
+   "before": 18,
+   "after": 19,
+   "expected": {
+    "before": 18,
+    "after": 18
+   }
+  },
+  "v2_paired_within_cond": true,
+  "v3_edit_fn": "cloud_e1_run.global_sparse_edit (bf16 sign-fixed)"
+ },
+ "verdict": "REFUTED_WITH_CAVEAT",
+ "reasoning": [
+  "机制检查通过：编辑在 A_raw 引入 7 题重复循环（0→7），B_rep1.15 与 C_ngram4 都将编辑后重复循环压回 0，rep 也下降 —— 解码修复确实生效。",
+  "但结果检查失败：压制重复后配对通过数没有一致改善 —— A_raw(不压制)=+1, B_rep1.15=-4, C_ngram4=+3，三者符号不一致。",
+  "因此重复循环虽被编辑引入、被修复成功压制，却不是限制生成通过数的瓶颈：即使不压制（A_raw），新判分器下生成也未下降（18→19）。",
+  "H1-decode 的核心机制主张（重复循环放大导致 logit/生成解耦）被证伪。"
+ ],
+ "meta_conclusion": "口径冲突主要是测量伪影，不是能力分歧：(1) v4 报告的'生成净0'用的是旧判分器 last_number，它把重复循环尾数当答案（假负）；新判分器 answer_number 抓'答案：'标记后，同一编辑 A_raw 已是 18→19（净+1），与 logit(+2.18/+2.70) 符号一致。(2) logit 是 teacher-forcing 目标串似然（30/30 全升、密集连续）；生成是贪心端到端通过（受截断/推理链/格式/重复污染，分辨率仅 ±1~3）。两者量的是不同东西，幅度本不可比。这是本项目主线'评测饱和本质是测量失效'的又一实例。",
+ "caveats": [
+  "verifier v1 严格断言未通过：A_raw after=19 而非期望 18。差 1 题属进程间波动（此前已观察编辑净效应在 ±1~3 带内）；v1 用单点精确相等而非容差带，属 verifier 设计过严，置信度降一档。",
+  "B/C 基线本身被解码惩罚压低（15/5），floor effect 使其配对 delta 方差大；故以 A_raw（真实部署条件，无解码 hack）为主读数。"
+ ]
+}

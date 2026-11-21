@@ -1,0 +1,6 @@
+# 覆盖率审计部分（A）：仅标准库，无需安装任何依赖
+# E1 权重编辑实验部分（B）需要：
+torch>=2.4
+transformers>=4.49
+safetensors>=0.4
+numpy>=1.26

@@ -1,0 +1,303 @@
+{
+  "generated": "2026-11-19T14:02:09.489390+00:00",
+  "inputs": {
+    "results_dir": "agent-evalkit/results",
+    "manifest": null
+  },
+  "files": {
+    "json_scanned": 79,
+    "score_files_used": 11,
+    "duplicate_files_collapsed": 14,
+    "skipped": [
+      {
+        "file": "agent-evalkit/results/eval-cost-local4.json",
+        "reason": "not_score_file"
+      },
+      {
+        "file": "agent-evalkit/results/gate-policy.json",
+        "reason": "not_score_file"
+      },
+      {
+        "file": "agent-evalkit/results/run-mined-gw-calc.json",
+        "reason": "not_score_file"
+      },
+      {
+        "file": "agent-evalkit/results/run-mined-local-calc.json",
+        "reason": "not_score_file"
+      },
+      {
+        "file": "agent-evalkit/results/replay-demo/trace-gw7-evidence.jsonl",
+        "reason": "not_score_file"
+      },
+      {
+        "file": "agent-evalkit/results/failure-loop/armA-adv05-1.json",
+        "reason": "not_score_file"
+      },
+      {
+        "file": "agent-evalkit/results/failure-loop/armA-adv05-2.json",
+        "reason": "not_score_file"
+      },
+      {
+        "file": "agent-evalkit/results/failure-loop/armA-adv05-3.json",
+        "reason": "not_score_file"
+      },
+      {
+        "file": "agent-evalkit/results/failure-loop/armB-adv05-1.json",
+        "reason": "not_score_file"
+      },
+      {
+        "file": "agent-evalkit/results/failure-loop/armB-adv05-2.json",
+        "reason": "not_score_file"
+      },
+      {
+        "file": "agent-evalkit/results/failure-loop/armB-adv05-3.json",
+        "reason": "not_score_file"
+      },
+      {
+        "file": "agent-evalkit/results/failure-loop/h-repro.json",
+        "reason": "not_score_file"
+      },
+      {
+        "file": "agent-evalkit/results/failure-loop/run-20261110T091250Z.jsonl",
+        "reason": "not_score_file"
+      },
+      {
+        "file": "agent-evalkit/results/failure-loop/run-20261110T093444Z.jsonl",
+        "reason": "not_score_file"
+      },
+      {
+        "file": "agent-evalkit/results/failure-loop/run-20261110T093529Z.jsonl",
+        "reason": "not_score_file"
+      },
+      {
+        "file": "agent-evalkit/results/failure-loop/run-20261110T093614Z.jsonl",
+        "reason": "not_score_file"
+      },
+      {
+        "file": "agent-evalkit/results/failure-loop/run-20261110T093729Z.jsonl",
+        "reason": "not_score_file"
+      },
+      {
+        "file": "agent-evalkit/results/hard-x3/h-adv-01-1.json",
+        "reason": "not_score_file"
+      },
+      {
+        "file": "agent-evalkit/results/hard-x3/h-adv-01-2.json",
+        "reason": "not_score_file"
+      },
+      {
+        "file": "agent-evalkit/results/hard-x3/h-adv-01-3.json",
+        "reason": "not_score_file"
+      }
+    ]
+  },
+  "caliber": {
+    "L1_manifest": 62,
+    "L2_measured_power_ge_3": 46,
+    "L3_discriminative": 28,
+    "inflation_L1_over_L2": 1.348,
+    "measured_at_least_once": 62,
+    "constant_tasks_in_L2": 18
+  },
+  "hash_lock": {
+    "verified": 0,
+    "mismatched": 0,
+    "mismatches": [],
+    "policy": "no manifest"
+  },
+  "constant_tasks": [
+    {
+      "id": "adv-01",
+      "score": 1.0,
+      "n_configs": 5
+    },
+    {
+      "id": "adv-02",
+      "score": 1.0,
+      "n_configs": 5
+    },
+    {
+      "id": "adv-03",
+      "score": 1.0,
+      "n_configs": 5
+    },
+    {
+      "id": "adv-04",
+      "score": 1.0,
+      "n_configs": 5
+    },
+    {
+      "id": "adv-06",
+      "score": 1.0,
+      "n_configs": 5
+    },
+    {
+      "id": "adv-07",
+      "score": 1.0,
+      "n_configs": 5
+    },
+    {
+      "id": "adv-08",
+      "score": 1.0,
+      "n_configs": 5
+    },
+    {
+      "id": "adv-10",
+      "score": 1.0,
+      "n_configs": 5
+    },
+    {
+      "id": "adv-11",
+      "score": 1.0,
+      "n_configs": 5
+    },
+    {
+      "id": "adv-12",
+      "score": 1.0,
+      "n_configs": 5
+    },
+    {
+      "id": "audit-01",
+      "score": 1.0,
+      "n_configs": 3
+    },
+    {
+      "id": "audit-02",
+      "score": 1.0,
+      "n_configs": 3
+    },
+    {
+      "id": "audit-04",
+      "score": 1.0,
+      "n_configs": 3
+    },
+    {
+      "id": "audit-05",
+      "score": 1.0,
+      "n_configs": 3
+    },
+    {
+      "id": "audit-06",
+      "score": 1.0,
+      "n_configs": 3
+    },
+    {
+      "id": "audit-08",
+      "score": 1.0,
+      "n_configs": 3
+    },
+    {
+      "id": "audit-09",
+      "score": 1.0,
+      "n_configs": 3
+    },
+    {
+      "id": "audit-10",
+      "score": 1.0,
+      "n_configs": 3
+    }
+  ],
+  "spectra": {
+    "available": true,
+    "n_tasks": 46,
+    "n_configs": 11,
+    "k_eff_participation_ratio": 3.5874,
+    "upper_bound_min_tasks_configs": 11,
+    "singular_values_top10": [
+      4.4355,
+      1.499,
+      1.1939,
+      1.1547,
+      0.6823,
+      0.6,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "note": "k_eff 同时是任务冗余与配置多样性的函数；必须与上界 min(n_tasks, n_configs) 同报，跨配置数不可比。"
+  },
+  "backfill_targets": [
+    {
+      "id": "audit-11",
+      "power": 2,
+      "reason": "underpowered"
+    },
+    {
+      "id": "audit-12",
+      "power": 2,
+      "reason": "underpowered"
+    },
+    {
+      "id": "audit-13",
+      "power": 2,
+      "reason": "underpowered"
+    },
+    {
+      "id": "audit-14",
+      "power": 2,
+      "reason": "underpowered"
+    },
+    {
+      "id": "audit-15",
+      "power": 2,
+      "reason": "underpowered"
+    },
+    {
+      "id": "audit-16",
+      "power": 2,
+      "reason": "underpowered"
+    },
+    {
+      "id": "audit-17",
+      "power": 2,
+      "reason": "underpowered"
+    },
+    {
+      "id": "audit-18",
+      "power": 2,
+      "reason": "underpowered"
+    },
+    {
+      "id": "audit-19",
+      "power": 2,
+      "reason": "underpowered"
+    },
+    {
+      "id": "audit-20",
+      "power": 2,
+      "reason": "underpowered"
+    },
+    {
+      "id": "mined-01",
+      "power": 1,
+      "reason": "underpowered"
+    },
+    {
+      "id": "mined-02",
+      "power": 1,
+      "reason": "underpowered"
+    },
+    {
+      "id": "mined-03",
+      "power": 1,
+      "reason": "underpowered"
+    },
+    {
+      "id": "mined-04",
+      "power": 1,
+      "reason": "underpowered"
+    },
+    {
+      "id": "mined-05",
+      "power": 1,
+      "reason": "underpowered"
+    },
+    {
+      "id": "mined-06",
+      "power": 1,
+      "reason": "underpowered"
+    }
+  ],
+  "verdict": "清单 62 条；其中 46 条有 >=3 种不同配置的测量 (46/62)；再其中 28 条仍有区分度。'N 条' 描述清单，'46 条' 才是实测规模，高估 1.35 倍。16 条待补测。"
+}

@@ -1,0 +1,119 @@
+{
+ "clusters": {
+  "judgefix": {
+   "files": [
+    "c_fs_judgefix.jsonl.summary.json",
+    "a_fs_u3_judgefix.jsonl.summary.json"
+   ],
+   "within_pairs": [
+    {
+     "a": "c_fs_judgefix.jsonl.summary.json",
+     "b": "a_fs_u3_judgefix.jsonl.summary.json",
+     "sym_diff": 0,
+     "only_a": [],
+     "only_b": [],
+     "n_a": 18,
+     "n_b": 18
+    }
+   ]
+  },
+  "legacy": {
+   "files": [
+    "c_rep2_fewshot.summary.json",
+    "c_rep3_fewshot.summary.json",
+    "c_arm_qwen25_7b_baseline_fewshot.summary.json"
+   ],
+   "within_pairs": [
+    {
+     "a": "c_rep2_fewshot.summary.json",
+     "b": "c_rep3_fewshot.summary.json",
+     "sym_diff": 0,
+     "only_a": [],
+     "only_b": [],
+     "n_a": 15,
+     "n_b": 15
+    },
+    {
+     "a": "c_rep2_fewshot.summary.json",
+     "b": "c_arm_qwen25_7b_baseline_fewshot.summary.json",
+     "sym_diff": 0,
+     "only_a": [],
+     "only_b": [],
+     "n_a": 15,
+     "n_b": 15
+    },
+    {
+     "a": "c_rep3_fewshot.summary.json",
+     "b": "c_arm_qwen25_7b_baseline_fewshot.summary.json",
+     "sym_diff": 0,
+     "only_a": [],
+     "only_b": [],
+     "n_a": 15,
+     "n_b": 15
+    }
+   ]
+  }
+ },
+ "identity_gate": {
+  "c_fs_judgefix.jsonl.summary.json": {
+   "scorer": "answer_number",
+   "status": "RECOMPUTED",
+   "n_violation": 0,
+   "samples": []
+  },
+  "a_fs_u3_judgefix.jsonl.summary.json": {
+   "scorer": "answer_number",
+   "status": "RECOMPUTED",
+   "n_violation": 0,
+   "samples": []
+  },
+  "c_rep2_fewshot.summary.json": {
+   "scorer": "last_number",
+   "status": "UNRECOMPUTABLE",
+   "reason": "output 被截断（max_len=300），无法用落盘文本复算 ok",
+   "n_violation": null
+  },
+  "c_rep3_fewshot.summary.json": {
+   "scorer": "last_number",
+   "status": "UNRECOMPUTABLE",
+   "reason": "output 被截断（max_len=300），无法用落盘文本复算 ok",
+   "n_violation": null
+  },
+  "c_arm_qwen25_7b_baseline_fewshot.summary.json": {
+   "scorer": "last_number",
+   "status": "UNRECOMPUTABLE",
+   "reason": "output 被截断（max_len=300），无法用落盘文本复算 ok",
+   "n_violation": null
+  }
+ },
+ "note": "",
+ "cross_cluster": [
+  {
+   "clusters": [
+    "judgefix",
+    "legacy"
+   ],
+   "sym_diff": 3,
+   "only_judgefix": [
+    "D2-F2-03",
+    "D2-F2-04",
+    "D2-F3-04"
+   ],
+   "only_legacy": []
+  }
+ ],
+ "verdict": "NO_RUNTIME_NONDETERMINISM",
+ "reason": "每个口径簇内部 ≥2 个独立进程逐题通过集完全一致（簇内对称差=0），簇间差异可由脚本版本（output 截断/判分器/d2_max_new）解释，不支持『贪心生成有 ±1~3 运行时噪声』；legacy 簇 output 被截断标 UNRECOMPUTABLE，但其 ok 为落盘原始读数，仍参与对称差",
+ "identity_gate_summary": {
+  "recomputed_zero_violation": [
+   "c_fs_judgefix.jsonl.summary.json",
+   "a_fs_u3_judgefix.jsonl.summary.json"
+  ],
+  "recomputed_with_violation": [],
+  "unrecomputable": [
+   "c_rep2_fewshot.summary.json",
+   "c_rep3_fewshot.summary.json",
+   "c_arm_qwen25_7b_baseline_fewshot.summary.json"
+  ]
+ }
+}

@@ -1,0 +1,412 @@
+{
+  "generated": "2026-11-20T03:56:43.807520+00:00",
+  "inputs": {
+    "results_dir": "wse-bench-public",
+    "manifest": "wse-bench-public/assets/bench_manifest.json"
+  },
+  "files": {
+    "json_scanned": 120,
+    "score_files_used": 52,
+    "duplicate_files_collapsed": 3,
+    "skipped": [
+      {
+        "file": "wse-bench-public/_audit_contamination_r28_summary.json",
+        "reason": "not_score_file"
+      },
+      {
+        "file": "wse-bench-public/_r28_bootstrap_ci.json",
+        "reason": "not_score_file"
+      },
+      {
+        "file": "wse-bench-public/_r28_effectsize_summary.json",
+        "reason": "not_score_file"
+      },
+      {
+        "file": "wse-bench-public/_r28_largen_ckpt.json",
+        "reason": "not_score_file"
+      },
+      {
+        "file": "wse-bench-public/_r28_largen_summary.json",
+        "reason": "not_score_file"
+      },
+      {
+        "file": "wse-bench-public/_r28_prefix_ablation_ckpt.json",
+        "reason": "not_score_file"
+      },
+      {
+        "file": "wse-bench-public/_r28_prefix_ablation_summary.json",
+        "reason": "not_score_file"
+      },
+      {
+        "file": "wse-bench-public/ablation_comparison_30q.json",
+        "reason": "not_score_file"
+      },
+      {
+        "file": "wse-bench-public/agents_unclassified_reclassified.json",
+        "reason": "not_score_file"
+      },
+      {
+        "file": "wse-bench-public/failure_mode_r26_T105_T108_T132.json",
+        "reason": "not_score_file"
+      },
+      {
+        "file": "wse-bench-public/framework_adoption_empirical.json",
+        "reason": "not_score_file"
+      },
+      {
+        "file": "wse-bench-public/lic_block.json",
+        "reason": "not_score_file"
+      },
+      {
+        "file": "wse-bench-public/pillar_a_qwen_30q_stats.json",
+        "reason": "not_score_file"
+      },
+      {
+        "file": "wse-bench-public/pillar_a_qwen_aggregate_v3.json",
+        "reason": "not_score_file"
+      },
+      {
+        "file": "wse-bench-public/preregistration_context_grounding_r18.json",
+        "reason": "not_score_file"
+      },
+      {
+        "file": "wse-bench-public/preregistration_pathA_r18.json",
+        "reason": "not_score_file"
+      },
+      {
+        "file": "wse-bench-public/preregistration_r11.json",
+        "reason": "not_score_file"
+      },
+      {
+        "file": "wse-bench-public/preregistration_r12.json",
+        "reason": "not_score_file"
+      },
+      {
+        "file": "wse-bench-public/preregistration_r14.json",
+        "reason": "not_score_file"
+      },
+      {
+        "file": "wse-bench-public/preregistration_r16.json",
+        "reason": "not_score_file"
+      }
+    ]
+  },
+  "caliber": {
+    "L1_manifest": 156,
+    "L2_measured_power_ge_3": 126,
+    "L3_discriminative": 104,
+    "inflation_L1_over_L2": 1.238,
+    "measured_at_least_once": 126,
+    "constant_tasks_in_L2": 22
+  },
+  "hash_lock": {
+    "verified": 153,
+    "mismatched": 3,
+    "mismatches": [
+      {
+        "id": "T029",
+        "stored": "957573704c6d6c13",
+        "computed": "b22e1cd754dd4f21",
+        "cohort": "2026Q3-core"
+      },
+      {
+        "id": "T030",
+        "stored": "d7e5dde8207b91a4",
+        "computed": "b76ddaa77edd056d",
+        "cohort": "2026Q3-core"
+      },
+      {
+        "id": "T031",
+        "stored": "7f05e4500c168f0a",
+        "computed": "9957501dfb69ac05",
+        "cohort": "2026Q3-core"
+      }
+    ],
+    "policy": "失配只报告，绝不重写 hash；目标集失配须中止补测。"
+  },
+  "constant_tasks": [
+    {
+      "id": "T003",
+      "score": 1.0,
+      "n_configs": 38
+    },
+    {
+      "id": "T013",
+      "score": 1.0,
+      "n_configs": 38
+    },
+    {
+      "id": "T039",
+      "score": 1.0,
+      "n_configs": 19
+    },
+    {
+      "id": "T040",
+      "score": 1.0,
+      "n_configs": 19
+    },
+    {
+      "id": "T043",
+      "score": 1.0,
+      "n_configs": 16
+    },
+    {
+      "id": "T046",
+      "score": 1.0,
+      "n_configs": 15
+    },
+    {
+      "id": "T064",
+      "score": 1.0,
+      "n_configs": 15
+    },
+    {
+      "id": "T078",
+      "score": 1.0,
+      "n_configs": 11
+    },
+    {
+      "id": "T079",
+      "score": 1.0,
+      "n_configs": 11
+    },
+    {
+      "id": "T080",
+      "score": 1.0,
+      "n_configs": 13
+    },
+    {
+      "id": "T083",
+      "score": 1.0,
+      "n_configs": 13
+    },
+    {
+      "id": "T092",
+      "score": 1.0,
+      "n_configs": 7
+    },
+    {
+      "id": "T095",
+      "score": 1.0,
+      "n_configs": 7
+    },
+    {
+      "id": "T103",
+      "score": 1.0,
+      "n_configs": 3
+    },
+    {
+      "id": "T117",
+      "score": 1.0,
+      "n_configs": 3
+    },
+    {
+      "id": "T123",
+      "score": 1.0,
+      "n_configs": 4
+    },
+    {
+      "id": "T134",
+      "score": 1.0,
+      "n_configs": 3
+    },
+    {
+      "id": "T138",
+      "score": 1.0,
+      "n_configs": 3
+    },
+    {
+      "id": "T152",
+      "score": 0.0,
+      "n_configs": 3
+    },
+    {
+      "id": "T153",
+      "score": 1.0,
+      "n_configs": 3
+    },
+    {
+      "id": "T156",
+      "score": 1.0,
+      "n_configs": 3
+    },
+    {
+      "id": "T157",
+      "score": 1.0,
+      "n_configs": 3
+    }
+  ],
+  "spectra": {
+    "available": true,
+    "n_tasks": 126,
+    "n_configs": 52,
+    "k_eff_participation_ratio": 13.0564,
+    "upper_bound_min_tasks_configs": 52,
+    "singular_values_top10": [
+      8.4774,
+      4.9818,
+      3.7672,
+      3.2292,
+      2.3516,
+      2.1456,
+      2.0498,
+      1.9327,
+      1.6492,
+      1.4556
+    ],
+    "note": "k_eff 同时是任务冗余与配置多样性的函数；必须与上界 min(n_tasks, n_configs) 同报，跨配置数不可比。"
+  },
+  "backfill_targets": [
+    {
+      "id": "T104",
+      "power": 0,
+      "reason": "never_measured"
+    },
+    {
+      "id": "T106",
+      "power": 0,
+      "reason": "never_measured"
+    },
+    {
+      "id": "T107",
+      "power": 0,
+      "reason": "never_measured"
+    },
+    {
+      "id": "T108",
+      "power": 0,
+      "reason": "never_measured"
+    },
+    {
+      "id": "T110",
+      "power": 0,
+      "reason": "never_measured"
+    },
+    {
+      "id": "T112",
+      "power": 0,
+      "reason": "never_measured"
+    },
+    {
+      "id": "T113",
+      "power": 0,
+      "reason": "never_measured"
+    },
+    {
+      "id": "T115",
+      "power": 0,
+      "reason": "never_measured"
+    },
+    {
+      "id": "T116",
+      "power": 0,
+      "reason": "never_measured"
+    },
+    {
+      "id": "T118",
+      "power": 0,
+      "reason": "never_measured"
+    },
+    {
+      "id": "T124",
+      "power": 0,
+      "reason": "never_measured"
+    },
+    {
+      "id": "T125",
+      "power": 0,
+      "reason": "never_measured"
+    },
+    {
+      "id": "T127",
+      "power": 0,
+      "reason": "never_measured"
+    },
+    {
+      "id": "T128",
+      "power": 0,
+      "reason": "never_measured"
+    },
+    {
+      "id": "T130",
+      "power": 0,
+      "reason": "never_measured"
+    },
+    {
+      "id": "T131",
+      "power": 0,
+      "reason": "never_measured"
+    },
+    {
+      "id": "T141",
+      "power": 0,
+      "reason": "never_measured"
+    },
+    {
+      "id": "T142",
+      "power": 0,
+      "reason": "never_measured"
+    },
+    {
+      "id": "T143",
+      "power": 0,
+      "reason": "never_measured"
+    },
+    {
+      "id": "T144",
+      "power": 0,
+      "reason": "never_measured"
+    },
+    {
+      "id": "T145",
+      "power": 0,
+      "reason": "never_measured"
+    },
+    {
+      "id": "T146",
+      "power": 0,
+      "reason": "never_measured"
+    },
+    {
+      "id": "T147",
+      "power": 0,
+      "reason": "never_measured"
+    },
+    {
+      "id": "T148",
+      "power": 0,
+      "reason": "never_measured"
+    },
+    {
+      "id": "T150",
+      "power": 0,
+      "reason": "never_measured"
+    },
+    {
+      "id": "T151",
+      "power": 0,
+      "reason": "never_measured"
+    },
+    {
+      "id": "T154",
+      "power": 0,
+      "reason": "never_measured"
+    },
+    {
+      "id": "T155",
+      "power": 0,
+      "reason": "never_measured"
+    },
+    {
+      "id": "T158",
+      "power": 0,
+      "reason": "never_measured"
+    },
+    {
+      "id": "T159",
+      "power": 0,
+      "reason": "never_measured"
+    }
+  ],
+  "verdict": "清单 156 条；其中 126 条有 >=3 种不同配置的测量 (126/156)；再其中 104 条仍有区分度。'N 条' 描述清单，'126 条' 才是实测规模，高估 1.24 倍。30 条待补测。"
+}
